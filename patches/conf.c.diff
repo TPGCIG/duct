@@ -1,0 +1,10 @@
+--- sys/arch/amd64/amd64/conf.c.orig	Fri Nov 21 04:36:23 2025
++++ sys/arch/amd64/amd64/conf.c			Fri Nov 21 04:36:33 2025
+@@ -283,6 +283,7 @@
+ 	cdev_pppx_init(NPPPX,pppac),	/* 99: PPP Access Concentrator */
+ 	cdev_ujoy_init(NUJOY,ujoy),	/* 100: USB joystick/gamecontroller */
+ 	cdev_psp_init(NPSP,psp),	/* 101: PSP */
++	cdev_duct_init(NDUCT, duct), 	/* 102: Duct */
+ };
+ int	nchrdev = nitems(cdevsw);
+ 
