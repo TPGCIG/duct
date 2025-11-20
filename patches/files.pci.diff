@@ -1,0 +1,19 @@
+--- files.pci.orig	Fri Nov 21 03:39:19 2025
++++ files.pci	Fri Nov 21 03:39:28 2025
+@@ -1,4 +1,4 @@
+-#	$OpenBSD: files.pci,v 1.369 2024/11/08 12:17:07 stsp Exp $
++g	$OpenBSD: files.pci,v 1.369 2024/11/08 12:17:07 stsp Exp $
+ #	$NetBSD: files.pci,v 1.20 1996/09/24 17:47:15 christos Exp $
+ #
+ # Config file and device description for machine-independent PCI code.
+@@ -891,6 +891,10 @@
+ # UFS HC
+ attach	ufshci at pci with ufshci_pci
+ file	dev/pci/ufshci_pci.c		ufshci_pci
++
++device 	duct
++attach 	duct at pci
++file 	dev/pci/duct.c  		duct needs-flag
+ 
+ 
+ include "dev/pci/files.agp"

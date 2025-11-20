@@ -1,0 +1,10 @@
+--- GENERIC.orig	Fri Nov 21 03:41:18 2025
++++ GENERIC	Thu Nov 20 23:13:45 2025
+@@ -464,6 +464,7 @@
+ #trm*	at pci?				# Tekram DC-3x5U SCSI Controllers
+ vmwpvs*	at pci?				# VMware ParaVirtual SCSI
+ nvme*	at pci?				# NVMe controllers
++duct* 	at pci? 			# Duct A2
+ ufshci*	at pci?				# UFSHCI controllers
+ 
+ scsibus* at scsi?
