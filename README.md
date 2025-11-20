@@ -21,6 +21,7 @@ The project was completely done within the OpenBSD kernel (via virtual machine) 
 duct-pci-driver/
 ├── patches/
 │   ├── GENERIC.diff         # Kernel config patch to enable the driver
+│   ├── conf.c.diff          # Map the duct device to a Major number.
 │   └── files.pci.diff       # Build system patch to register source files
 ├── sys/
 │   └── dev/
