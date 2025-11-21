@@ -25,6 +25,7 @@ duct-pci-driver/
 │   └── files.pci.diff       # Build system patch to register source files
 ├── sys/
 │   └── dev/
+│       ├── ductvar.h        # Definitions of device-compatible data structures.
 │       └── pci/
 │           └── duct.c       # Main driver source code
 └── userland/
@@ -96,6 +97,4 @@ hello duct and world!
 hello duct and world!
 ```
 
-
-
-
+[Watch a video showcasing the driver's use on duct hardware!](https://youtu.be/JvRWwv0N3Jg)
